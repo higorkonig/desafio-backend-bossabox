@@ -4,8 +4,10 @@ import { Router } from 'express';
 import UserController from './app/controllers/UserController';
 import LoginController from './app/controllers/LoginController';
 import ToolsController from './app/controllers/ToolsController';
+
 //Middlewares
 import LoginMiddleware from './app/middlewares/LoginMiddleware';
+
 const routes = new Router();
 
 routes.post('/users', UserController.store);

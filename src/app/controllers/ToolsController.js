@@ -48,14 +48,14 @@ class ToolsController {
         id
       }
     })
-		res.status(200).json({message: 'Deletado com sucesso'});
+		res.status(200).json({delete: true});
 	}
 
 	async store(req, res) {
 		const schema = Yup.object().shape({
 			title: Yup.string().required(),
 			link: Yup.string().required(),
-			description: Yup.string().required(),
+			description: Yup.string().required()
 		});
 
 		if (!(await schema.isValid(req.body))) {
@@ -63,8 +63,6 @@ class ToolsController {
 		}
 
 		req.body.user_id = req.userId;
-
-		console.log(req.body.user_id);
 
 		const { id, title, link, description, tags, user_id } = await Tools.create(
 			req.body

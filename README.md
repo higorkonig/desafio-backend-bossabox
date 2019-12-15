@@ -23,7 +23,7 @@ Ou, caso esteja usando o **Yarn**
 
 Assim preenchendo as informações de sua conexão com o banco de dados, lembrando que é útilizado o Banco MySQL nesta aplicação.
 
-#### Com as _config_ do banco de dados configurada, é preciso adicionar o a tabela ao mesmo, para isso, utilize o comando:
+#### Com as _config_ do banco de dados configurada, é preciso adicionar a tabela ao mesmo, para isso, utilize o comando:
 
 `npx sequelize db:migrate`
 
@@ -31,7 +31,7 @@ Ou, caso esteja usando o **Yarn**
 
 `yarn sequelize db:migrate`
 
-#### Após os passos anteriores, a aplicação está pronta para ser executada.
+#### Após os passos anteriores, a aplicação esta pronta para ser executada.
 
 `npm run dev`
 

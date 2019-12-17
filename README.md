@@ -41,4 +41,4 @@ ou, caso esteja usando o _Yarn_
 
 Lembrando que a aplicação roda na porta **3000** por padrão. Porém pode ser fácilmente alterada no arquivo `./src/app.js`
 
-<!-- Para informações com mais detalhes da API acesse [aqui]() -->
+Para informações com mais detalhes da API acesse [aqui]()

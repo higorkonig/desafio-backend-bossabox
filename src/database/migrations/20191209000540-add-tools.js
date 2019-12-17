@@ -22,7 +22,7 @@ module.exports = {
 				allowNull: false
       },
       tags: {
-				type: Sequelize.ARRAY(Sequelize.TEXT),
+				type: Sequelize.TEXT,
 				allowNull: false
 			},
 			created_at: {

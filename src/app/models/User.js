@@ -9,7 +9,7 @@ class User extends Model {
 				name: Sequelize.STRING,
 				email: Sequelize.STRING,
 				password: Sequelize.VIRTUAL,
-				passoword_hash: Sequelize.STRING
+				password_hash: Sequelize.STRING
 			},
 			{
 				sequelize
@@ -18,7 +18,7 @@ class User extends Model {
 
 		this.addHook('beforeSave', async user => {
 			if (user.password) {
-				user.passoword_hash = await bcrypt.hash(user.password, 8);
+				user.password_hash = await bcrypt.hash(user.password, 8);
 			}
 		});
 

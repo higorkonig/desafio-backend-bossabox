@@ -23,8 +23,8 @@ class ToolsController {
 					user_id: user_id
 				},
 				attributes: ['id', 'title', 'link', 'description', 'tags']
-			});
-
+      });
+      
 			let toolJson = JSON.stringify(tool);
 			toolJson = JSON.parse(toolJson);
 			const result = [];
@@ -36,7 +36,6 @@ class ToolsController {
 					}
 				});
 			}
-
 			return res.status(200).json(result);
 		}
 	}
